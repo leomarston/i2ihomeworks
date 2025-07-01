@@ -1,6 +1,10 @@
 Homework 1 requires creating an account with a cloud service provider (GCP or AWS {in this example I chose AWS}), setting up a simple virtual machine, and performing a ping test from a local machine to the cloud machine.
 
 
+AWS MACHINE:
+![image](https://github.com/user-attachments/assets/dea86ddb-a859-47be-995b-5c9dd96dc2da)
+
+
 OUTPUT:
 
 C:\Users\Admin>ping 56.228.24.53
