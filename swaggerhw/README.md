@@ -35,8 +35,8 @@ mvn spring-boot:run
 
 ```json
 {
-  "name": "John Doe",
-  "email": "john.doe@example.com"
+  "name": "Ahmet Murat",
+  "email": "ahmet.murat@gmail.com"
 }
 ```
 
@@ -58,9 +58,8 @@ The application follows a layered architecture:
 ## 📊 Sample Data
 
 The application comes pre-loaded with sample customers:
-1. John Doe - john.doe@example.com
-2. Jane Smith - jane.smith@example.com  
-3. Bob Johnson - bob.johnson@example.com
+1. Ahmet Murat - ahmet.murat@gmail.com
+2. Ayla Can - ayla.can@gmail.com  
 
 ## 🔍 Features
 
