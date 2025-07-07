@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  oracle-xe:
+    image: oracle/database:21.3.0-xe
+    container_name: oracle-xe-db
+    restart: unless-stopped
+    ports:
+      - "1521:1521"      # Database port
+      - "5500:5500"      # Enterprise Manager Express port
+    environment:
+      - ORACLE_PWD=ORACLE
+      - ORACLE_CHARACTERSET=AL32UTF8
+    volumes:
+      - oracle_data:/opt/oracle/oradata
+      - ./scripts:/opt/oracle/scripts/startup
+    healthcheck:
+      test: ["CMD", "bash", "-c", "echo 'SELECT 1 FROM DUAL;' | sqlplus -s sys/ORACLE@//localhost:1521/XE as sysdba"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 300s
+    shm_size: 2gb
+    networks:
+      - oracle-network
+
+volumes:
+  oracle_data:
+    driver: local
+
+networks:
+  oracle-network:
+    driver: bridge

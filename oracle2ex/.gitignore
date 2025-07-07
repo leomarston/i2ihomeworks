@@ -1,0 +1,93 @@
+# Oracle Database specific
+*.log
+*.trc
+*.trm
+*.aud
+*.dmp
+*.exp
+*.ctl
+*.ora
+*.rman
+
+# Docker specific
+.dockerignore
+docker-compose.override.yml
+
+# Oracle installation files
+*.zip
+*.rpm
+*.tar.gz
+*LINUX*.zip
+oracle-database-*.rpm
+
+# Cloned Oracle docker repository
+docker-images/
+
+# Database files
+*.dbf
+*.ctl
+*.log
+*.arc
+*.rdo
+
+# Temporary files
+*.tmp
+*.temp
+*~
+*.swp
+*.swo
+
+# OS specific
+.DS_Store
+Thumbs.db
+*.bak
+*.orig
+
+# IDE specific
+.vscode/
+.idea/
+*.iml
+*.project
+*.classpath
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Node.js (if applicable)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (if applicable)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Java (if applicable)
+*.class
+*.jar
+*.war
+*.ear
+target/
+.settings/
+
+# Docker volumes data
+oracle-data/
+data/
+
+# Log files
+logs/
+*.log
+
+# Build artifacts
+build/
+dist/
+out/
